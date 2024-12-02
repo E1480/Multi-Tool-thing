@@ -1,5 +1,5 @@
-<center>Multi-Tool-thing</center>
-<center><h1>Test</h1></center>
+## Multi-Tool-thing
+
 # Instructions
 > [!NOTE]
 > Currently supported file extensions: `.py .c .cpp .c++`
