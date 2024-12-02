@@ -82,11 +82,11 @@ def Run(UserIn, Dict):
 
     # Add more languages here
     match extension:
-         case "py":
-             call(['python',Dir+Dict[UserIn]])
-         case "c" | "cpp" | "c++":
+        case "py":
+            call(['python',Dir+Dict[UserIn]])
+        case "c" | "cpp" | "c++":
             if path.isdir(Dir+'output'):
-               outDir = Dir+'output'
+                outDir = Dir+'output'
             else:
                 try:
                     call(['mkdir', Dir+'output'])
@@ -97,8 +97,8 @@ def Run(UserIn, Dict):
             call(['gcc', Dir+Dict[UserIn],'-o',Dir+"output/"+name])
             call([Dir+"output/"+name])
             
-         case _:
-             pass
+        case _:
+            pass
 
     print("\n",name,"End...")
     GetFiles(Dict)
