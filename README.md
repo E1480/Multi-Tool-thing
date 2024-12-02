@@ -1,7 +1,7 @@
-## Multi-Tool-thing
+# Multi-Tool-thing
 
 
-# Instructions
+### Instructions
 > [!NOTE]
 > Currently supported file extensions: `.py .c .cpp .c++`
 >
