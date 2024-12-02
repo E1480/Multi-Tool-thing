@@ -1,6 +1,8 @@
 ## Multi-Tool-thing
 
+$$
 <p style="text-align:center;">Text_content</p>
+$$
 
 # Instructions
 > [!NOTE]
