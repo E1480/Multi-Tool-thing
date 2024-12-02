@@ -96,7 +96,10 @@ def Run(UserIn, Dict):
             
             call(['gcc', Dir+Dict[UserIn],'-o',Dir+"output/"+name])
             call([Dir+"output/"+name])
-               
+            
+         case _:
+            pass
+
     print("\n",name,"End...")
     GetFiles(Dict)
 
