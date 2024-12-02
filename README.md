@@ -1,5 +1,7 @@
 ## Multi-Tool-thing
 
+<p style="text-align:center;">Text_content</p>
+
 # Instructions
 > [!NOTE]
 > Currently supported file extensions: `.py .c .cpp .c++`
