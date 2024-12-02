@@ -1,23 +1,38 @@
 from os import listdir, path
 from subprocess import call
 
-
-#Copyright (c) 2024 E1480
+#######################################################################################
+# MIT License
 #
-#Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+# Copyright (c) 2024 E1480
 #
-#The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
 #
-#THE SOFTWARE iIS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#######################################################################################
 
 
 # ================================
 # | Program by: 1480
 # ================================
 
-# Settings
 
+
+# Settings
 folder = "./applets/"
 
 
@@ -88,9 +103,9 @@ def Run(UserIn, Dict):
 if __name__ == "__main__":
     app = Main()
     Dict = app.List()
-
     GetFiles(Dict)
     while True:
+        print("type q to exit")
         print("Select using the ID")
         userIn = input(":: ").lower()
         # Exit commands because I'm lazy.
@@ -105,7 +120,8 @@ if __name__ == "__main__":
                 break
      
         if userIn == "file":
-            GetFiles(Dict)       
+            GetFiles(Dict)
+
 
         try:
             Run(int(userIn), Dict)
