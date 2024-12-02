@@ -1,4 +1,4 @@
-# Multi-Tool-thing
+<center>Multi-Tool-thing</center>
 
 # Instructions
 > [!NOTE]
